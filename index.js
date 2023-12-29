@@ -1,21 +1,13 @@
-// receivesAFunction
-let receivesAFunction = (spy) => {
-    spy()
+const receivesAFunction=datus=>datus();
+
+var fn;
+const returnsANamedFunction=()=>{
+   (function (){
+    fn=returnsANamedFunction
+   })
+    return function cheruh (){fn()}
 }
 
-
-
-// returnsANamedFunction
-let returnsANamedFunction = () => {
-    return function namedFunction() {
-        // function body
-    }
-}
-
-
-// returnsAnAnonymousFunction
-let returnsAnAnonymousFunction = () => {
-    return (() => {
-        // function body
-    }) ;
+const returnsAnAnonymousFunction=()=>{
+    return function(){fn()}
 }
